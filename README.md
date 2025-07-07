@@ -34,7 +34,7 @@ This project demonstrates a modern data engineering workflow using:
 - CPI and unemployment fluctuations showed weak correlation to sales
 - Holiday weeks generated substantial revenue spikes compared to non-holiday weeks
 
-📊 View sample dashboards and visual reports in `/reports/`. -->
+📊 View sample dashboards and visual reports in `/reports/`.
 
 This project was developed using Jupyter Notbooks and Python scripts.
 It assumes access to Snowflake and an S3 bucket with CSV data staged.

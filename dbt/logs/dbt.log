@@ -1,0 +1,433 @@
+[0m11:09:41.097193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecc4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa2f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa2fc50>]}
+
+
+============================== 11:09:41.101277 | 361e46fb-52fa-43d7-ae72-b9117f4676af ==============================
+[0m11:09:41.101277 [info ] [MainThread]: Running with dbt=1.9.8
+[0m11:09:41.101805 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/richardkindle/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select tag:silver', 'send_anonymous_usage_stats': 'True'}
+[0m11:09:42.272957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '361e46fb-52fa-43d7-ae72-b9117f4676af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef44640>]}
+[0m11:09:42.331465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '361e46fb-52fa-43d7-ae72-b9117f4676af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1159d1590>]}
+[0m11:09:42.332712 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m11:09:42.468616 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m11:09:42.470609 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4403802, "process_in_blocks": "0", "process_kernel_time": 0.39957, "process_mem_max_rss": "187191296", "process_out_blocks": "0", "process_user_time": 2.029558}
+[0m11:09:42.471534 [debug] [MainThread]: Command `dbt run` failed at 11:09:42.471419 after 1.44 seconds
+[0m11:09:42.471974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115832750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115832850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1159d99a0>]}
+[0m11:09:42.472346 [debug] [MainThread]: Flushing usage events
+[0m11:09:42.750755 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:58.101562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113680c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143eb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143ebc50>]}
+
+
+============================== 11:51:58.107134 | fcf5af08-0d89-439e-a6b1-b0283e516cf7 ==============================
+[0m11:51:58.107134 [info ] [MainThread]: Running with dbt=1.9.8
+[0m11:51:58.107891 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richardkindle/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:58.229890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fcf5af08-0d89-439e-a6b1-b0283e516cf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113900640>]}
+[0m11:51:58.261783 [debug] [MainThread]: Set downloads directory='/var/folders/90/m9dcfcxn38j0ypf7wjqn_bf80000gp/T/dbt-downloads-3jwqvakm'
+[0m11:51:58.262141 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:51:58.445904 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:51:58.446865 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:51:58.529949 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:51:58.534618 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:51:58.835178 [info ] [MainThread]: Installed from version 1.3.0
+[0m11:51:58.835636 [info ] [MainThread]: Up to date!
+[0m11:51:58.836000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fcf5af08-0d89-439e-a6b1-b0283e516cf7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11453fce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11453f9b0>]}
+[0m11:51:58.837868 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.8080083, "process_in_blocks": "0", "process_kernel_time": 0.302378, "process_mem_max_rss": "105099264", "process_out_blocks": "0", "process_user_time": 1.375324}
+[0m11:51:58.838343 [debug] [MainThread]: Command `dbt deps` succeeded at 11:51:58.838229 after 0.81 seconds
+[0m11:51:58.838678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145cc950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11368bc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11452b200>]}
+[0m11:51:58.838990 [debug] [MainThread]: Flushing usage events
+[0m11:51:59.036881 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:07.605745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112d4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1120439d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112043c50>]}
+
+
+============================== 11:52:07.611039 | b9e22323-748f-48fc-93b3-0f0dbc6ba501 ==============================
+[0m11:52:07.611039 [info ] [MainThread]: Running with dbt=1.9.8
+[0m11:52:07.611629 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/logs', 'profiles_dir': '/Users/richardkindle/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select tag:silver', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:08.676778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111558640>]}
+[0m11:52:08.733721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fe5590>]}
+[0m11:52:08.735030 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m11:52:08.865946 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m11:52:08.866817 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:52:08.867150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117e46c50>]}
+[0m11:52:10.521447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1183b2f30>]}
+[0m11:52:10.613696 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/target/manifest.json
+[0m11:52:10.616115 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/target/semantic_manifest.json
+[0m11:52:10.639690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118583690>]}
+[0m11:52:10.640097 [info ] [MainThread]: Found 17 models, 1 seed, 29 data tests, 4 sources, 598 macros
+[0m11:52:10.640403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c318050>]}
+[0m11:52:10.642089 [info ] [MainThread]: 
+[0m11:52:10.642405 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:52:10.642669 [info ] [MainThread]: 
+[0m11:52:10.643106 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:52:10.646870 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WALMART_DB'
+[0m11:52:10.723008 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB"
+[0m11:52:10.723375 [debug] [ThreadPool]: On list_WALMART_DB: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB"} */
+show terse schemas in database WALMART_DB
+    limit 10000
+[0m11:52:10.723656 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:52:11.739241 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.016 seconds
+[0m11:52:11.742500 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WALMART_DB, now list_WALMART_DB_RAW)
+[0m11:52:11.743618 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WALMART_DB_AGG'
+[0m11:52:11.756561 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WALMART_DB_TRANSFORM'
+[0m11:52:11.759667 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_RAW"
+[0m11:52:11.760064 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WALMART_DB_MART'
+[0m11:52:11.761550 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_TRANSFORM"
+[0m11:52:11.762015 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_AGG"
+[0m11:52:11.762345 [debug] [ThreadPool]: On list_WALMART_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_RAW"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:11.763700 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_MART"
+[0m11:52:11.763986 [debug] [ThreadPool]: On list_WALMART_DB_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_TRANSFORM"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:11.764277 [debug] [ThreadPool]: On list_WALMART_DB_AGG: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_AGG"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:11.764915 [debug] [ThreadPool]: On list_WALMART_DB_MART: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_MART"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:11.765618 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:52:11.765886 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:52:11.766210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:52:11.948155 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.183 seconds
+[0m11:52:11.952580 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_RAW"
+[0m11:52:11.952855 [debug] [ThreadPool]: On list_WALMART_DB_RAW: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_RAW"} */
+show objects in WALMART_DB.RAW
+    limit 10000
+    
+;
+[0m11:52:12.124006 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd4a94-0000-21f0-001a-350b000197ca
+[0m11:52:12.124415 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m11:52:12.124832 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m11:52:12.125084 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m11:52:12.125524 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WALMART_DB_RAW, now list_WALMART_DB_SILVER)
+[0m11:52:12.127137 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_SILVER"
+[0m11:52:12.127404 [debug] [ThreadPool]: On list_WALMART_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_SILVER"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:12.238655 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.111 seconds
+[0m11:52:12.240941 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_SILVER"
+[0m11:52:12.241298 [debug] [ThreadPool]: On list_WALMART_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_SILVER"} */
+show objects in WALMART_DB.SILVER
+    limit 10000
+    
+;
+[0m11:52:12.248134 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.482 seconds
+[0m11:52:12.249334 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_MART"
+[0m11:52:12.249605 [debug] [ThreadPool]: On list_WALMART_DB_MART: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_MART"} */
+show objects in WALMART_DB.MART
+    limit 10000
+    
+;
+[0m11:52:12.302668 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.537 seconds
+[0m11:52:12.304695 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_TRANSFORM"
+[0m11:52:12.305101 [debug] [ThreadPool]: On list_WALMART_DB_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_TRANSFORM"} */
+show objects in WALMART_DB.TRANSFORM
+    limit 10000
+    
+;
+[0m11:52:12.318456 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.553 seconds
+[0m11:52:12.320369 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_AGG"
+[0m11:52:12.320642 [debug] [ThreadPool]: On list_WALMART_DB_AGG: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_AGG"} */
+show objects in WALMART_DB.AGG
+    limit 10000
+    
+;
+[0m11:52:12.336213 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd4a94-0000-22ea-001a-350b000311de
+[0m11:52:12.336581 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m11:52:12.336973 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m11:52:12.337224 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m11:52:12.337645 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WALMART_DB_MART, now list_WALMART_DB_BRONZE)
+[0m11:52:12.339181 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_BRONZE"
+[0m11:52:12.339444 [debug] [ThreadPool]: On list_WALMART_DB_BRONZE: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_BRONZE"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m11:52:12.345071 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.103 seconds
+[0m11:52:12.347296 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_SILVER"
+[0m11:52:12.347685 [debug] [ThreadPool]: On list_WALMART_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_SILVER"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m11:52:12.379043 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd4a94-0000-220c-001a-350b0001677e
+[0m11:52:12.379631 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m11:52:12.380126 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m11:52:12.380514 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m11:52:12.400514 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd4a94-0000-22cc-001a-350b0001e232
+[0m11:52:12.401124 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m11:52:12.401614 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m11:52:12.402008 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m11:52:12.409945 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.070 seconds
+[0m11:52:12.411948 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_BRONZE"
+[0m11:52:12.412341 [debug] [ThreadPool]: On list_WALMART_DB_BRONZE: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_BRONZE"} */
+show objects in WALMART_DB.BRONZE
+    limit 10000
+    
+;
+[0m11:52:12.434868 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.087 seconds
+[0m11:52:12.520493 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.108 seconds
+[0m11:52:12.522709 [debug] [ThreadPool]: Using snowflake connection "list_WALMART_DB_BRONZE"
+[0m11:52:12.523074 [debug] [ThreadPool]: On list_WALMART_DB_BRONZE: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "connection_name": "list_WALMART_DB_BRONZE"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m11:52:12.600227 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.077 seconds
+[0m11:52:12.603396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c6c8290>]}
+[0m11:52:12.607315 [debug] [Thread-1 (]: Began running node model.walmart_e2e_project.walmart_date_dim
+[0m11:52:12.608151 [debug] [Thread-2 (]: Began running node model.walmart_e2e_project.walmart_store_dim
+[0m11:52:12.607815 [info ] [Thread-1 (]: 1 of 3 START sql table model SILVER.walmart_date_dim ........................... [RUN]
+[0m11:52:12.609109 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_WALMART_DB_SILVER, now model.walmart_e2e_project.walmart_date_dim)
+[0m11:52:12.609419 [debug] [Thread-1 (]: Began compiling node model.walmart_e2e_project.walmart_date_dim
+[0m11:52:12.608618 [info ] [Thread-2 (]: 2 of 3 START sql table model SILVER.walmart_store_dim .......................... [RUN]
+[0m11:52:12.616129 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_WALMART_DB_AGG, now model.walmart_e2e_project.walmart_store_dim)
+[0m11:52:12.616436 [debug] [Thread-2 (]: Began compiling node model.walmart_e2e_project.walmart_store_dim
+[0m11:52:12.619624 [debug] [Thread-2 (]: Writing injected SQL for node "model.walmart_e2e_project.walmart_store_dim"
+[0m11:52:12.620715 [debug] [Thread-1 (]: Writing injected SQL for node "model.walmart_e2e_project.walmart_date_dim"
+[0m11:52:12.621560 [debug] [Thread-2 (]: Began executing node model.walmart_e2e_project.walmart_store_dim
+[0m11:52:12.628552 [debug] [Thread-1 (]: Began executing node model.walmart_e2e_project.walmart_date_dim
+[0m11:52:12.638105 [debug] [Thread-2 (]: Using snowflake connection "model.walmart_e2e_project.walmart_store_dim"
+[0m11:52:12.638483 [debug] [Thread-2 (]: On model.walmart_e2e_project.walmart_store_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_store_dim"} */
+show parameters like 'query_tag' in session
+[0m11:52:12.641394 [debug] [Thread-1 (]: Using snowflake connection "model.walmart_e2e_project.walmart_date_dim"
+[0m11:52:12.641771 [debug] [Thread-1 (]: On model.walmart_e2e_project.walmart_date_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_date_dim"} */
+show parameters like 'query_tag' in session
+[0m11:52:12.725742 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.083 seconds
+[0m11:52:12.726691 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.088 seconds
+[0m11:52:12.728149 [debug] [Thread-1 (]: Setting query_tag to 'walmart_date_dim'. Will reset to '' after materialization.
+[0m11:52:12.729325 [debug] [Thread-2 (]: Setting query_tag to 'walmart_store_dim'. Will reset to '' after materialization.
+[0m11:52:12.729911 [debug] [Thread-1 (]: Using snowflake connection "model.walmart_e2e_project.walmart_date_dim"
+[0m11:52:12.730373 [debug] [Thread-2 (]: Using snowflake connection "model.walmart_e2e_project.walmart_store_dim"
+[0m11:52:12.730683 [debug] [Thread-1 (]: On model.walmart_e2e_project.walmart_date_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_date_dim"} */
+alter session set query_tag = 'walmart_date_dim'
+[0m11:52:12.730994 [debug] [Thread-2 (]: On model.walmart_e2e_project.walmart_store_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_store_dim"} */
+alter session set query_tag = 'walmart_store_dim'
+[0m11:52:12.824078 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m11:52:12.843040 [debug] [Thread-1 (]: Writing runtime sql for node "model.walmart_e2e_project.walmart_date_dim"
+[0m11:52:12.843833 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.112 seconds
+[0m11:52:12.845361 [debug] [Thread-2 (]: Writing runtime sql for node "model.walmart_e2e_project.walmart_store_dim"
+[0m11:52:12.846690 [debug] [Thread-2 (]: Using snowflake connection "model.walmart_e2e_project.walmart_store_dim"
+[0m11:52:12.847043 [debug] [Thread-2 (]: On model.walmart_e2e_project.walmart_store_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_store_dim"} */
+create or replace transient table WALMART_DB.SILVER.walmart_store_dim
+    
+
+    
+    as (
+
+WITH raw_stores AS (
+  SELECT 
+    store,
+    type,
+    size
+  FROM
+    WALMART_DB.BRONZE.raw_stores
+),
+raw_department AS (
+  SELECT DISTINCT
+    store,
+    dept
+  FROM
+    WALMART_DB.BRONZE.raw_department
+)
+SELECT
+  md5(cast(coalesce(cast(s.store as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(d.dept as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) AS store_dept_sk,
+  s.store AS Store_id,
+  d.dept AS Dept_id,
+  s.type AS Store_type,
+  s.size AS Store_size,
+  CURRENT_TIMESTAMP() AS Insert_date,
+  CURRENT_TIMESTAMP() AS Update_date
+FROM
+  raw_stores s
+LEFT JOIN
+  raw_department d
+ON
+  s.store = d.store
+    )
+;
+[0m11:52:12.848306 [debug] [Thread-1 (]: Using snowflake connection "model.walmart_e2e_project.walmart_date_dim"
+[0m11:52:12.848878 [debug] [Thread-1 (]: On model.walmart_e2e_project.walmart_date_dim: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_date_dim"} */
+create or replace transient table WALMART_DB.SILVER.walmart_date_dim
+    
+
+    
+    as (
+
+WITH distinct_dates AS (
+    SELECT DISTINCT 
+      CAST(date AS DATE) AS date_day
+    FROM
+      WALMART_DB.BRONZE.raw_fact
+),
+holiday_flags AS (
+  SELECT
+    CAST(date AS DATE) AS date_day,
+    MAX(IsHoliday) AS IsHoliday  -- Use Min or Max function to remove duplicates; Only works if the data is clean
+  FROM
+    WALMART_DB.BRONZE.raw_fact
+  GROUP BY
+    1 -- the date_day
+)
+SELECT
+  TO_CHAR(d.date_day, 'YYYYMMDD')::INT AS date_id,
+  d.date_day as date,
+  EXTRACT(DAY FROM d.date_day) AS day,
+  EXTRACT(WEEK FROM d.date_day) AS week,
+  EXTRACT(MONTH FROM d.date_day) AS month,
+  CASE EXTRACT(MONTH FROM d.date_day)
+    WHEN 1 THEN 'January'
+    WHEN 2 THEN 'February'
+    WHEN 3 THEN 'March'
+    WHEN 4 THEN 'April'
+    WHEN 5 THEN 'May'
+    WHEN 6 THEN 'June'
+    WHEN 7 THEN 'July'
+    WHEN 8 THEN 'August'
+    WHEN 9 THEN 'September'
+    WHEN 10 THEN 'October'
+    WHEN 11 THEN 'November'
+    WHEN 12 THEN 'December'
+  END AS month_name,
+  EXTRACT(QUARTER FROM d.date_day) AS quarter,
+  EXTRACT(YEAR FROM d.date_day) AS year,
+  EXTRACT(DAYOFWEEK FROM d.date_day) AS dayofweek,
+  CASE EXTRACT(DAYOFWEEK FROM d.date_day)
+    WHEN 1 THEN 'Sunday'
+    WHEN 2 THEN 'Monday'
+    WHEN 3 THEN 'Tuesday'
+    WHEN 4 THEN 'Wednesday'
+    WHEN 5 THEN 'Thursday'
+    WHEN 6 THEN 'Friday'
+    WHEN 7 THEN 'Saturday'
+  END AS day_name,
+  CASE 
+    WHEN EXTRACT(DAYOFWEEK FROM d.date_day) IN (1,7) THEN TRUE
+    ELSE FALSE
+  END AS is_weekend,
+  h.IsHoliday,
+  CURRENT_TIMESTAMP() AS Insert_date,
+  CURRENT_TIMESTAMP() AS Update_date
+FROM
+  distinct_dates d
+LEFT JOIN
+  holiday_flags h
+ON
+  d.date_day = h.date_day
+    )
+;
+[0m11:52:14.155296 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.306 seconds
+[0m11:52:14.176776 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c8b5b20>]}
+[0m11:52:14.177351 [info ] [Thread-1 (]: 1 of 3 OK created sql table model SILVER.walmart_date_dim ...................... [[32mSUCCESS 1[0m in 1.57s]
+[0m11:52:14.177879 [debug] [Thread-1 (]: Finished running node model.walmart_e2e_project.walmart_date_dim
+[0m11:52:14.178338 [debug] [Thread-3 (]: Began running node model.walmart_e2e_project.walmart_fact_table
+[0m11:52:14.178715 [info ] [Thread-3 (]: 3 of 3 START sql table model SILVER.walmart_fact_table ......................... [RUN]
+[0m11:52:14.179095 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_WALMART_DB_TRANSFORM, now model.walmart_e2e_project.walmart_fact_table)
+[0m11:52:14.179405 [debug] [Thread-3 (]: Began compiling node model.walmart_e2e_project.walmart_fact_table
+[0m11:52:14.182662 [debug] [Thread-3 (]: Writing injected SQL for node "model.walmart_e2e_project.walmart_fact_table"
+[0m11:52:14.183325 [debug] [Thread-3 (]: Began executing node model.walmart_e2e_project.walmart_fact_table
+[0m11:52:14.188191 [debug] [Thread-3 (]: Using snowflake connection "model.walmart_e2e_project.walmart_fact_table"
+[0m11:52:14.188524 [debug] [Thread-3 (]: On model.walmart_e2e_project.walmart_fact_table: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_fact_table"} */
+show parameters like 'query_tag' in session
+[0m11:52:14.284976 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.096 seconds
+[0m11:52:14.286154 [debug] [Thread-3 (]: Setting query_tag to 'walmart_fact_table'. Will reset to '' after materialization.
+[0m11:52:14.286671 [debug] [Thread-3 (]: Using snowflake connection "model.walmart_e2e_project.walmart_fact_table"
+[0m11:52:14.286974 [debug] [Thread-3 (]: On model.walmart_e2e_project.walmart_fact_table: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_fact_table"} */
+alter session set query_tag = 'walmart_fact_table'
+[0m11:52:14.314945 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.466 seconds
+[0m11:52:14.316812 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c8ff1b0>]}
+[0m11:52:14.317322 [info ] [Thread-2 (]: 2 of 3 OK created sql table model SILVER.walmart_store_dim ..................... [[32mSUCCESS 1[0m in 1.70s]
+[0m11:52:14.317819 [debug] [Thread-2 (]: Finished running node model.walmart_e2e_project.walmart_store_dim
+[0m11:52:14.373368 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.086 seconds
+[0m11:52:14.375263 [debug] [Thread-3 (]: Writing runtime sql for node "model.walmart_e2e_project.walmart_fact_table"
+[0m11:52:14.376648 [debug] [Thread-3 (]: Using snowflake connection "model.walmart_e2e_project.walmart_fact_table"
+[0m11:52:14.376984 [debug] [Thread-3 (]: On model.walmart_e2e_project.walmart_fact_table: /* {"app": "dbt", "dbt_version": "1.9.8", "profile_name": "walmart_e2e_project", "target_name": "dev", "node_id": "model.walmart_e2e_project.walmart_fact_table"} */
+create or replace transient table WALMART_DB.SILVER.walmart_fact_table
+    
+
+    
+    as (
+
+WITH weekly_sales AS (
+  SELECT
+    store AS store_id,
+    dept AS dept_id,
+    date,
+    weekly_sales
+  FROM
+    WALMART_DB.BRONZE.raw_department
+),
+fact_data AS (
+  SELECT
+    date,
+    store AS store_id,
+    fuel_price,
+    temperature AS store_temperature,
+    cpi,
+    unemployment,
+    markdown1,
+    markdown2,
+    markdown3,
+    markdown4,
+    markdown5,
+    isholiday
+  FROM
+    WALMART_DB.BRONZE.raw_fact
+),
+date_lookup AS (
+  SELECT
+    date AS date_day,
+    TO_CHAR(date, 'YYYYMMDD')::INT AS date_id
+  FROM
+    WALMART_DB.SILVER.walmart_date_dim
+)
+SELECT
+  TO_CHAR(w.date, 'YYYYMMDD')::INT AS date_id,
+  w.store_id,
+  w.dept_id,
+  w.weekly_sales AS store_weekly_sales,
+  f.fuel_price,
+  f.store_temperature,
+  f.unemployment,
+  f.markdown1,
+  f.markdown2,
+  f.markdown3,
+  f.markdown4,
+  f.markdown5,
+  f.isholiday as is_holiday,
+  CURRENT_TIMESTAMP() AS Insert_date,
+  CURRENT_TIMESTAMP() AS Update_date,
+  CURRENT_TIMESTAMP() AS vrsn_start_date,
+  NULL AS vrsn_end_date
+FROM
+  weekly_sales w
+LEFT JOIN
+  fact_data f
+ON
+  w.store_id = f.store_id
+AND
+  w.date = f.date
+LEFT JOIN
+  date_lookup d
+ON
+  w.date = d.date_day
+    )
+;
+[0m11:52:16.927153 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.550 seconds
+[0m11:52:16.929649 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9e22323-748f-48fc-93b3-0f0dbc6ba501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c91d650>]}
+[0m11:52:16.930241 [info ] [Thread-3 (]: 3 of 3 OK created sql table model SILVER.walmart_fact_table .................... [[32mSUCCESS 1[0m in 2.75s]
+[0m11:52:16.930849 [debug] [Thread-3 (]: Finished running node model.walmart_e2e_project.walmart_fact_table
+[0m11:52:16.932112 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:52:16.932374 [debug] [MainThread]: Connection 'model.walmart_e2e_project.walmart_date_dim' was left open.
+[0m11:52:16.932636 [debug] [MainThread]: On model.walmart_e2e_project.walmart_date_dim: Close
+[0m11:52:17.058454 [debug] [MainThread]: Connection 'model.walmart_e2e_project.walmart_store_dim' was left open.
+[0m11:52:17.058959 [debug] [MainThread]: On model.walmart_e2e_project.walmart_store_dim: Close
+[0m11:52:17.172284 [debug] [MainThread]: Connection 'model.walmart_e2e_project.walmart_fact_table' was left open.
+[0m11:52:17.172785 [debug] [MainThread]: On model.walmart_e2e_project.walmart_fact_table: Close
+[0m11:52:17.281021 [debug] [MainThread]: Connection 'list_WALMART_DB_BRONZE' was left open.
+[0m11:52:17.281513 [debug] [MainThread]: On list_WALMART_DB_BRONZE: Close
+[0m11:52:17.405852 [info ] [MainThread]: 
+[0m11:52:17.406377 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 6.76 seconds (6.76s).
+[0m11:52:17.407642 [debug] [MainThread]: Command end result
+[0m11:52:17.434581 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/target/manifest.json
+[0m11:52:17.436431 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/target/semantic_manifest.json
+[0m11:52:17.441262 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/richardkindle/Library/CloudStorage/GoogleDrive-eldnikr@gmail.com/My Drive/DE Academy/DBT/deacademy-dbt/target/run_results.json
+[0m11:52:17.441517 [info ] [MainThread]: 
+[0m11:52:17.441860 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:52:17.442138 [info ] [MainThread]: 
+[0m11:52:17.442560 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m11:52:17.444039 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.912009, "process_in_blocks": "0", "process_kernel_time": 0.548274, "process_mem_max_rss": "221298688", "process_out_blocks": "0", "process_user_time": 4.248341}
+[0m11:52:17.444452 [debug] [MainThread]: Command `dbt run` succeeded at 11:52:17.444356 after 9.91 seconds
+[0m11:52:17.444800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11207ec80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d81e0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110528290>]}
+[0m11:52:17.445105 [debug] [MainThread]: Flushing usage events
+[0m11:52:17.633069 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,21 @@
+country_code,country_name,continent,currency
+USA,United States,North America,USD
+CAN,Canada,North America,CAD
+MEX,Mexico,North America,PES
+BRA,Brazil,South America,BRL
+ARG,Argentina,South America,APO
+GBR,United Kingdom,Europe,PST
+FRA,France,Europe,EUR
+DEU,Germany,Europe,EUR
+ITA,Italy,Europe,EUR
+ESP,Spain,Europe,EUR
+CHN,China,Asia,CNY
+JPN,Japan,Asia,JPY
+IND,India,Asia,INR
+KOR,South Korea,Asia,SKW
+AUS,Australia,Oceania,AUD
+NZL,New Zealand,Oceania,NZD
+ZAF,South Africa,Africa,SAR
+EGY,Egypt,Africa,EGP
+NGA,Nigeria,Africa,NGN
+RUS,Russia,Europe/Asia,RUB

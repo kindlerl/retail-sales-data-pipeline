@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: walmart_store_dim
+    description: >
+      Slowly changing dimension type 1 table for Walmart store and department info. 
+      Combines store and department information to create the dimensional model.
+    columns:
+      - name: store_id
+        description: Unique identifier for the store (PK)
+        tests:
+          - not_null
+
+      - name: dept_id
+        description: Unique identifier for the department (PK)
+        tests:
+          - not_null
+
+      - name: store_type
+        description: Format type of the store (A, B, or C)
+
+      - name: store_size
+        description: Square footage of the store
+
+      - name: insert_date
+        description: Timestamp of initial insertion
+
+      - name: update_date
+        description: Timestamp of last update
+
+  - name: walmart_date_dim
+    description: >
+      Slowly changing dimention type 1 table for Walmart date info.  Used to 
+      generate daily, weekly, monthly, quarterly and holiday reports.
+    columns:
+      - name: date_id
+        description: Unique identifier for the date (PK)
+        tests:
+          - not_null
+
+      - name: store_date
+        description: date associated with given metric
+        tests:
+          - not_null
+
+      - name: day
+        description: Numeric day of month
+
+      - name: week
+        description: Numeric week of the year
+
+      - name: month
+        description: Numeric month of the year
+
+      - name: month_name
+        description: Alpha name of the month
+
+      - name: quarter
+        description: Numeric quarter of the year
+
+      - name: year
+        description: Numeric year
+
+      - name: dayofweek
+        description: Numeric day of the week (Sunday=1..Saturday=7)
+
+      - name: day_name
+        description: Alpha name of the week day (Monday...Sunday)
+
+      - name: is_weekend
+        description: Boolean to identify a weekend day
+
+      - name: is_holiday
+        description: Boolean to identify day as a holiday
+
+      - name: insert_date
+        description: Timestamp of initial insertion
+
+      - name: update_date
+        description: Timestamp of last update
+

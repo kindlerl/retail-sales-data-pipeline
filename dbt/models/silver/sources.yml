@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: walmart
+    database: WALMART_DB
+    schema: BRONZE
+    tables:
+      - name: raw_department
+      - name: raw_stores
+      - name: raw_fact

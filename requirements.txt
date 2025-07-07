@@ -1,0 +1,6 @@
+jupyter_core==5.8.1
+jupyter_server==2.16.0
+notebook==7.4.3
+notebook_shim==0.2.4
+pandas==2.3.0
+plotly==6.1.2
