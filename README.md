@@ -1,8 +1,7 @@
-## 📦 Walmart Sales Analytics Pipeline
+# 🛍️ Retail Sales Data Pipeline
 
-**Overview**
-**Overview**  
-This project analyzes historical weekly sales data for Walmart using a modern, cloud-native data engineering pipeline. Raw CSV data is ingested from AWS S3, staged in Snowflake, and transformed with dbt into dimensional models (including an SCD2 fact table). The final output consists of 10 interactive sales dashboards built with Python and Plotly, highlighting key business trends and insights.
+## Overview
+This project analyzes historical weekly sales data in the retail domain, applying modern data engineering practices to build a cloud-native analytics pipeline. Raw data is ingested from AWS S3 into Snowflake, transformed using dbt into dimensional models (including an SCD2 fact table), and visualized through interactive dashboards in Python and Plotly.
 
 This project demonstrates a modern data engineering workflow using:
 
@@ -28,14 +27,12 @@ This project demonstrates a modern data engineering workflow using:
 | **Report 9: Weekly Sales by CPI** | Displays the impact of Consumer Price Index (CPI) on sales using both raw scatter and aggregated trend views. | [![Report 9](reports/thumbnails/Report_9_Weekly_Sales_by_CPI_thumb.png)](reports/Report_9_Weekly_Sales_by_CPI.png) |
 | **Report 10: Weekly Sales by Department** | Visualizes sales across 99 departments, with a breakdown of the top 5 and total contributions. | [![Report 10](reports/thumbnails/Report_10_Weekly_Sales_by_Department_thumb.png)](reports/Report_10_Weekly_Sales_by_Department.png) |
 
+## 🔍 Key Insights
 
-<!-- 🔍 Key Insights
-- Highest performing departments are not always in the largest stores
-![Weekly Sales by Store Size](reports/Report_3_Weekly_Sales_by_Store_Size.png)
-- Weekly sales fluctuate appreciably with CPI and Unemployment Index
-![Weekly Sales by CPI](reports/Report_9_Weekly_Sales_by_CPI.png)
-- Store Type A outerforms Types B & C consistently across all months
-![Weekly Sales by Store Type](reports/Report_4_Weekly_Sales_by_Store_Type_and_Month.png)
+- Store Type A consistently outperformed Types B & C across all seasons
+- Department 92 generated the highest total sales, but not in the largest stores
+- CPI and unemployment fluctuations showed weak correlation to sales
+- Holiday weeks generated substantial revenue spikes compared to non-holiday weeks
 
 📊 View sample dashboards and visual reports in `/reports/`. -->
 
