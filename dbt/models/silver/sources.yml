@@ -8,3 +8,9 @@ sources:
       - name: raw_department
       - name: raw_stores
       - name: raw_fact
+  - name: silver
+    database: WALMART_DB
+    schema: SILVER
+    tables:
+      - name: WALMART_FACT_TABLE
+
