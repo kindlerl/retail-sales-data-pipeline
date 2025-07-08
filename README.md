@@ -10,7 +10,7 @@ This project demonstrates a modern data engineering workflow using:
 - **dbt** for transformation into dimensional models (SCD2 fact + store/date dimensions)
 - **Python + Plotly** for interactive reporting and visualization
 
-![Architecture Diagram](./Walmart_end-to-end.drawio.png)
+![Architecture Diagram](./images/Walmart_end-to-end.drawio.png)
 
 ## 📊 Report Overviews
 
