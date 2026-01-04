@@ -668,7 +668,16 @@ ORDER BY
 -- To get a total weekly sales, sum all the weekly sales
 -- by department once the dataframe is created
 
--- Check the initial snapshot
+-- =============================================
+-- ==  VALIDATE THE SCD2 TABLE CONFIGURATION  ==
+-- =============================================
+
+-- After creating the snapshot SQL in dbt and running
+-- it, verify the snapshot table was created.
+
+SELECT * FROM WALMART_DB.SNAPSHOTS.WALMART_FACT_SNAPSHOT LIMIT 50;
+
+-- Isolate the record to be updated to simulate data change
 SELECT 
     date_id,
     store_id,
@@ -691,7 +700,8 @@ WHERE DATE_ID = 20100205
 AND STORE_ID = 1
 AND DEPT_ID = 1;
 
-
+-- Re-run the previous SELECT statement to show the record has
+-- been updated in SCD2 format.
 
 
 

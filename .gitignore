@@ -1,0 +1,34 @@
+__pycache__/
+
+# Ignore Word/Google docs
+*.gdoc
+*.docx
+*.xlsx
+
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Ignore the Project_Documentation folder
+Project_Documentation/*
+
+# Ignore log files
+logs/*
+
+# Ignore notebook checkpoint saves
+.ipynb_checkpoints/
+
+# Ignore local_only files
+local_only/*
+
+.DS_Store
+Thumbs.db
+
+# Ignore google drive API files
+GoogleDrive_API/*
+
+# Ignore anything under venv
+venv/*
+
