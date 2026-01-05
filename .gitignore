@@ -23,6 +23,12 @@ logs/*
 # Ignore local_only files
 local_only/*
 
+# Ignore dbt artifacts
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/dbt_modules/
+
 .DS_Store
 Thumbs.db
 

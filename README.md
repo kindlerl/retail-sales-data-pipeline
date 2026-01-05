@@ -3,6 +3,8 @@
 ## Overview
 This project analyzes historical weekly sales data in the retail domain, applying modern data engineering practices to build a cloud-native analytics pipeline. Raw data is ingested from AWS S3 into Snowflake, transformed using dbt into dimensional models (including an SCD2 fact table), and visualized through interactive dashboards in Python and Plotly.
 
+## Architecture
+
 This project demonstrates a modern data engineering workflow using:
 
 - **AWS S3** for storage of raw CSV data
@@ -10,7 +12,9 @@ This project demonstrates a modern data engineering workflow using:
 - **dbt** for transformation into dimensional models (SCD2 fact + store/date dimensions)
 - **Python + Plotly** for interactive reporting and visualization
 
-![Architecture Diagram](./images/Walmart_end-to-end.drawio.png)
+![Architecture Diagram](./images/Walmart_end-to-end.png)
+
+Implemented Bronze→Silver with dbt-tested dimensional models; used Silver as the serving layer and performed report-specific aggregations in SQL/Python to keep the pipeline lightweight while maintaining strong data quality controls.
 
 ## 📊 Report Overviews
 
