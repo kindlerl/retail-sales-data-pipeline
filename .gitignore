@@ -10,6 +10,7 @@ __pycache__/
 *.pyd
 .venv/
 .env
+.git/
 
 # Ignore the Project_Documentation folder
 Project_Documentation/*
@@ -19,6 +20,8 @@ logs/*
 
 # Ignore notebook checkpoint saves
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
 
 # Ignore local_only files
 local_only/*
