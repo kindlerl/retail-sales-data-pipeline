@@ -9,7 +9,7 @@ This project demonstrates a modern data engineering workflow using:
 
 - **AWS S3** for storage of raw CSV data
 - **Snowflake** for cloud warehousing
-- **dbt** for transformation into dimensional models (SCD2 fact + store/date dimensions)
+- **dbt** for transformation into dimensional models, including SCD1 dimensions and an SCD2-style historical fact versioning exercise using dbt snapshots.
 - **Python + Plotly** for interactive reporting and visualization
 
 ![Architecture Diagram](./images/Walmart_end-to-end.png)
